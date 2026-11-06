@@ -1,13 +1,14 @@
 # @trysac/rate-limiter
 
-> Token bucket and sliding window counter rate limiters with an injectable clock, a pluggable store, a bounded in-memory store and standard 429 headers TypeScript library for Node.js 20+, published as ES modules with type declarations. MIT.
+> Token bucket and sliding window counter rate limiters with an injectable clock, a pluggable store, a bounded in-memory store and standard 429 headers. TypeScript library for Node.js 20+, published as ES modules with type declarations. MIT.
 
 ## Docs
 
-- [README](README.md): problem, installation and usage example
+- [README](README.md): problem, installation, usage example and API summary
 - [AGENTS.md](AGENTS.md): commands, folder map, conventions and limits for contributors and agents
 - [Architecture](docs/ARCHITECTURE.md): modules and boundaries
-- [Testing](docs/TESTING.md): how tests and coverage work
+- [Security](docs/SECURITY.md): threat model and limits
+- [Testing](docs/TESTING.md): test files and coverage
 - [Decisions](docs/decisions/0001-record-architecture-decisions.md): architecture decision records
 
 ## Optional
