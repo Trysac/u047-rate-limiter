@@ -11,6 +11,8 @@
 | gitleaks | Secret scanning | Standard scanner; runs locally and in CI. |
 | GitHub Actions + Dependabot | CI wrapper and updates | Runs the same local gates on Linux and Windows. |
 
+Runtime dependencies: none.
+
 ## Discarded
 
 | Tool | Why not |
@@ -20,4 +22,4 @@
 | Shell scripts for gates | Not portable to Windows; the gate runner is a Node script. |
 | Bundlers (tsup, Rollup) | Unneeded for a small ESM library; `tsc` emits what is published. |
 
-Add a row whenever a dependency or tool is added or rejected.
+A row is added to each table when a tool or dependency is added or rejected.
