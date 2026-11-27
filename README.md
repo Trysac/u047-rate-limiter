@@ -1,7 +1,6 @@
 # rate-limiter
 
-[![npm version](https://img.shields.io/npm/v/@trysac/rate-limiter.svg)](https://www.npmjs.com/package/@trysac/rate-limiter)
-[![license: MIT](https://img.shields.io/npm/l/@trysac/rate-limiter.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/Trysac/u047-rate-limiter/actions/workflows/ci.yml/badge.svg)](https://github.com/Trysac/u047-rate-limiter/actions/workflows/ci.yml)
 
 Token bucket and sliding window counter rate limiters with an injectable clock, a pluggable store, a bounded in-memory store and standard 429 headers.
@@ -12,9 +11,15 @@ APIs need per-client limits to protect themselves, and naive fixed-window counte
 
 ## Install
 
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
 ```sh
-npm install @trysac/rate-limiter
+git clone https://github.com/Trysac/u047-rate-limiter.git
+cd u047-rate-limiter && npm ci && npm run build
+cd ../your-project && npm install ../u047-rate-limiter
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/rate-limiter"`.
 
 Requires Node.js 20 or newer. The package ships ES modules with TypeScript declarations and has no runtime dependencies.
 
